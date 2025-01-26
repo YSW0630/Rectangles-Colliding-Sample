@@ -22,7 +22,7 @@ private:
   sf::Vector2f movement {0.f, 0.f};
   sf::Keyboard::Key lastKey = sf::Keyboard::Unknown;
   sf::Keyboard::Key collidedKey = sf::Keyboard::Unknown;
-  float moveSpeed = 0.5f;
+  float moveSpeed = 0.1f;
   float damping = 2.f;
   bool keyLock = false;
 };
