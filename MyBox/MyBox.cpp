@@ -58,22 +58,10 @@ void MyBox::applyMovement(MyBox &other)
     collidedKey = lastKey;
     keyLock = true;
   }
-  else if (collidedKey != lastKey &&
-           (lastKey == sf::Keyboard::Left ||
-            lastKey == sf::Keyboard::Right ||
-            lastKey == sf::Keyboard::Up ||
-            lastKey == sf::Keyboard::Down))
-  {
+  else if (collidedKey != lastKey)
     box.move(movement);
-  }
-  else if (collidedKey == lastKey &&
-           (lastKey == sf::Keyboard::Left ||
-            lastKey == sf::Keyboard::Right ||
-            lastKey == sf::Keyboard::Up ||
-            lastKey == sf::Keyboard::Down))
-  {
+  else if (collidedKey == lastKey)
     pushBox(other);
-  }
 }
 
 void MyBox::draw(sf::RenderWindow &window)
