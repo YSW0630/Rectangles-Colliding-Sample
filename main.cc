@@ -4,7 +4,7 @@
 int main() {
   sf::ContextSettings settings;
   settings.antialiasingLevel = 8;
-  sf::RenderWindow window(sf::VideoMode(800, 600), "Hello World Game");
+  sf::RenderWindow window(sf::VideoMode(800, 600), "Hello World Game", sf::Style::Default, settings);
   //window.setVerticalSyncEnabled(true);
 
   // Initialize the size and position of boxes
