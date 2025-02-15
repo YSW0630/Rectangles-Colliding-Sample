@@ -6,7 +6,7 @@ Two rectangles push each other :D
 ### Installation
 + **GNU/Linux**
   
-  Make sure your system has `make` installed, then clone this repository, navigate into it, and run:
+  Make sure your system has `libsfml-dev` (aka. SFML) and `make` installed, then clone this repository, navigate into it, and run:
   ```bash
   $ make && ./app
   ```
