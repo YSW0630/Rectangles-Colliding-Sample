@@ -1,9 +1,8 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
-class MyBox
-{
-public:
+class MyBox {
+ public:
   MyBox(float, float, sf::Color, float width = 50, float height = 50);
   MyBox() = default;
   ~MyBox() = default;
@@ -14,7 +13,7 @@ public:
   void draw(sf::RenderWindow&);
   inline bool isColliding(const MyBox&) const;
 
-private:
+ private:
   sf::RectangleShape box;
   sf::Vector2f movement;
   sf::Keyboard::Key lastKey;
